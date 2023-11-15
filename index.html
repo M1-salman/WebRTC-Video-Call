@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video call with WebRTC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="videos">
+        <video class="video-player" id="user-1" autoplay></video>
+        <video class="video-player" id="user-2" autoplay></video>
+        <div id="connection-status">Waiting for the connection...</div>
+        <div id="media-controller">
+            <i class="fa-solid fa-microphone-slash" id="audio"></i>
+            <i class="fa-solid fa-video-slash" id="video"></i>
+        </div>
+    </div>
+
+    <div id="connection-container">
+        <button id="create-offer">Create Offer</button>
+        <label>SDP Offer</label>
+        <textarea id="offer-sdp"></textarea>
+
+        <button id="create-answer">Create Answer</button>
+        <label>SDP Answer</label>
+        <textarea id="answer-sdp"></textarea>
+
+        <button id="add-answer">Add Answer</button>
+    </div>
+    <script src="https://kit.fontawesome.com/a02c785398.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
